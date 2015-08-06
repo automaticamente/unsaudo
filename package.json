@@ -1,0 +1,28 @@
+{
+  "name": "unsaudo",
+  "version": "0.0.1",
+  "description": "Twitter bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bertez/unsaudo.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "Berto Yáñez <berto@ber.to>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bertez/unsaudo/issues"
+  },
+  "homepage": "https://github.com/bertez/unsaudo#readme",
+  "dependencies": {
+    "string": "^3.3.1",
+    "twit": "^2.1.0",
+    "underscore": "^1.8.3"
+  }
+}
