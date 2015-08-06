@@ -43,8 +43,6 @@ var save = function() {
             console.log('Fatal error!');
             process.exit(1);
         }
-
-
     });
 };
 
@@ -72,5 +70,10 @@ var tweet = function() {
     });
 
 };
+
+setInterval(function() {
+    'use strict';
+    tweet();
+}, 1000 * 60 * 15);
 
 tweet();
