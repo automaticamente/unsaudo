@@ -1,13 +1,14 @@
 var fs = require('fs');
+
 var _ = require('underscore');
 var S = require('string');
 var Twit = require('twit');
+var dump = require('./parser/dump.js');
 
 var config = fs.existsSync('./local.config.js') ? require('./local.config.js') : require('./config.js');
 
 var Twitter = new Twit(config.API);
 
-var dump = require('./parser/dump.js');
 var dataFile = __dirname + '/nomenclator.json';
 var currentIndex = __dirname + '/current.json';
 
