@@ -1,4 +1,5 @@
 var fs = require('fs');
+var _ = require('underscore');
 var path = require('path');
 var dump = require('./dump.js');
 
@@ -65,7 +66,7 @@ fs.readFile(nomenclator, 'utf-8', function(err, data) {
 
     // Save to file
 
-    dump(places, outputFile, function(error) {
+    dump(_.shuffle(places), outputFile, function(error) {
         if (error) {
             console.log(error);
         } else {
