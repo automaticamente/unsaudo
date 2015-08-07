@@ -23,11 +23,11 @@ var greetings = {
         'Un saúdo para {{place}}, na parroquia {{parish}}, concello {{council}}!'
     ],
     councilparish: [
-        'Un saúdo para {{place}}, concello {{council}}'
+        'Un saúdo para {{place}}, concello {{council}}!'
 
     ],
     single: [
-        'Un saúdo para {{place}}'
+        'Un saúdo para {{place}}!'
     ]
 };
 
