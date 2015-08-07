@@ -1,4 +1,4 @@
-# Un saudo
+# Un saúdo
 
 This is a bot that will tweet all the place names in Galicia.
 
