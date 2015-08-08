@@ -64,9 +64,13 @@ var prefixer = function(string) {
 var tweet = function() {
     'use strict';
 
+    if(next.index > places.length - 1) {
+        //End placeholder
+    }
+
     var place = places[next.index];
 
-    var mode = (place.council === place.parish && place.parish === place.place) ? 'single' : (place.council === place.parish || place.parish === place.place) ? 'councilparish' : 'multi';
+    var mode = (place.council.toLowerCase() === place.parish.toLowerCase() && place.parish.toLowerCase() === place.place.toLowerCase()) ? 'single' : (place.council.toLowerCase() === place.parish.toLowerCase() || place.parish.toLowerCase() === place.place.toLowerCase()) ? 'councilparish' : 'multi';
 
     var greeting = _.sample(greetings[mode]);
 
