@@ -3,3 +3,4 @@ node_modules/
 local.config.js
 nomenclator.json
 current.json
+activity.log
